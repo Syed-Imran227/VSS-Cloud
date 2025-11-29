@@ -2,18 +2,6 @@ import os
 import ssl
 import json
 import hashlib
-import time
-from flask import Flask, jsonify, send_from_directory, request
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.dialects.postgresql import JSON
-
-# --- Configuration ---
-app = Flask(__name__)
-
-# Database Configuration
-# Use SQLite locally if DATABASE_URL is not set, otherwise use the provided URL (Render provides this)
-database_url = os.environ.get('DATABASE_URL', 'sqlite:///local.db')
-if database_url.startswith("postgres://"):
     database_url = database_url.replace("postgres://", "postgresql://", 1)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = database_url
