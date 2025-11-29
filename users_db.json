@@ -1,0 +1,26 @@
+{
+    "v": {
+        "salt": "98456c272ae052f389fea86c16c0e3b4",
+        "hash": "01ac46bd5f037a2811141b6db4410aee2c71edbe518b56b93625115f898c2a64"
+    },
+    "c": {
+        "salt": "c7f93fdf88885e78a3e0dc2abee5eb5a",
+        "hash": "ee8f962209abbc1adc090871e00a653c85be5b3713ea9002db674408a021ce82"
+    },
+    "x": {
+        "salt": "ab6358a7627737c8afc9d9595d0ac165",
+        "hash": "d037bb11bb91e52cef8dc6c9e77dd0a647184679cffadcef6ee5572f8b9aa050"
+    },
+    "g": {
+        "salt": "006379f5526f5570696e8e743dd18793",
+        "hash": "151109e5a47352c4f9c3a2c36b4e1949aece579f1e0f487095ca9ccad8c31f4d"
+    },
+    "f": {
+        "salt": "2c68b3381d47be011e49d143b6335241",
+        "hash": "65c6f55350898d4fdaa377c7f96ae277c6247d18aca1cd65bf2979271595052a"
+    },
+    "b": {
+        "salt": "888d4359cccfec340dcc639221f7e07c",
+        "hash": "7adedbe90220a3334cd4d9b508e0a814c1f7c32aa87db741d945f90a30aa3304"
+    }
+}
