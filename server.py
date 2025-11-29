@@ -1,14 +1,3 @@
-import os
-import ssl
-import json
-import hashlib
-    database_url = database_url.replace("postgres://", "postgresql://", 1)
-
-app.config['SQLALCHEMY_DATABASE_URI'] = database_url
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-db = SQLAlchemy(app)
-
 MUSIC_FOLDER = 'music_files'
 
 # --- Database Models ---
