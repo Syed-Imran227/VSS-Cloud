@@ -242,10 +242,17 @@ def get_songs():
         for f in os.listdir(MUSIC_FOLDER):
             if f.endswith('.mp3'):
                 try:
-                    p = f.replace('.mp3','').split(' - ')
+                    if ' - ' in f:
+                        p = f.replace('.mp3','').split(' - ')
+                        artist = p[0].strip()
+                        title = p[1].strip()
+                    else:
+                        artist = "Unknown"
+                        title = f.replace('.mp3', '')
+
                     # Construct URL dynamically based on request
                     url = f"{scheme}://{host}/music/{f}"
-                    songs.append({'title':p[1].strip(), 'artist':p[0].strip(), 'url':url})
+                    songs.append({'title':title, 'artist':artist, 'url':url})
                 except: pass
     return jsonify(songs)
 
